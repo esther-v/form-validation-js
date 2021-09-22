@@ -1,0 +1,25 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-photo, .box-login{
+    width: 50%;
+    padding: 30px;
+}
+
