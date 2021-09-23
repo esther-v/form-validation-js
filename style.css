@@ -41,7 +41,7 @@ body{
 }
 .box-photo img{
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 10px;   
 }
 .box-login{
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
@@ -125,3 +125,38 @@ button:hover{
     top: 10px;
 }
 
+@media screen and (max-width: 770px) {
+    .container{
+        flex-direction: column;
+        width: 360px;
+        margin: 40px 60px;
+        height: auto;
+
+    }
+    .container-photo, .container-login{
+        width: 100%;
+    }
+    .box-login, .box-photo{
+        border-radius: 0;
+        width: 100%;
+    }
+    .box-photo img{
+        width: 300px;
+
+    }    
+    .container-photo{
+        margin-top: 40px;
+    }
+    .container-login{
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 395px){
+    .container{
+        width: 300px;
+    }
+    .box-photo img{
+        width: 230px;
+    }
+}
