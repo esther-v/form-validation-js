@@ -4,50 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form and js validation</title>
+    <title>Form validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="box-photo">
-            <h1>Discover New-York</h1>
+        <div class="container-photo">
+            <div class="box-photo">
+                <h1>Découvrir New-York</h1>
+                <img src="https://images.unsplash.com/photo-1548206269-5b8fcd4765bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2231&q=80" alt="">
+            </div>
         </div>
-        <div class="box-login">
-            <h1>create an account</h1>
-            <form>
-                <div class="form-groupe">
-                    <label for="utilisateur">Nom d'utilisateur</label>
-                    <input type="text" id="utilisateur" placeholder="Nom d'utilisateur" maxlength="24">
-                    <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-                    <span class="message-alerte">Choisissez un pseudo entre 3 et 24 caractères</span>
-                </div>
-                <div class="form-groupe">
-                    <label for="email">Entrez votre mail</label>
-                    <input type="email" id="email" placeholder="Votre mail">
-                    <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-                    <span class="message-alerte">Rentrez un email valide.</span>
-                </div>
-                <div class="form-groupe">
-                    <label for="mdp">Mot de passe</label>
-                    <input type="password" id="mdp" placeholder="Mot de passe">
-                    <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-                    <span class="message-alerte">Un symbole, une lettre minuscule, un chiffre.</span>
-                    <div class="ligne">
-                        <div class="l1"><span>faible</span></div>
-                        <div class="l2"><span>moyen</span></div>
-                        <div class="l3"><span>fort</span></div>
+        <div class="container-login">
+            <div class="box-login">
+                <h1 class='create'>créer un compte</h1>
+                <form>
+                    <div class="form-groupe">
+                        <label for="utilisateur">Nom d'utilisateur</label>
+                        <input type="text" id="utilisateur" placeholder="Nom d'utilisateur" maxlength="24">
+                        <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
+                        <span class="message-alerte">Choisissez un pseudo entre 3 et 24 caractères</span>
                     </div>
-                </div>
-                <div class="form-groupe">
-                    <label for="mdpconf">Confirmer le mot de passe</label>
-                    <input type="password" id="mdpconf" placeholder="Confirmez">
-                    <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
-                </div>
-        
-                <button type="submit">Création du compte</button>
-            </form>
-        </div>
+                    <div class="form-groupe">
+                        <label for="email">Entrez votre mail</label>
+                        <input type="email" id="email" placeholder="Votre mail">
+                        <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
+                        <span class="message-alerte">Rentrez un email valide.</span>
+                    </div>
+                    <div class="form-groupe">
+                        <label for="mdp">Mot de passe</label>
+                        <input type="password" id="password" placeholder="Mot de passe">
+                        <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
+                        <span class="message-alerte">Un symbole, une lettre minuscule, un chiffre.</span>
+                        <div class="ligne">
+                            <div class="l1"><span>faible</span></div>
+                            <div class="l2"><span>moyen</span></div>
+                            <div class="l3"><span>fort</span></div>
+                        </div>
+                    </div>
+                    <div class="form-groupe">
+                        <label for="mdpconf">Confirmer le mot de passe</label>
+                        <input type="password" id="mdpconf" placeholder="Confirmez">
+                        <img src="ressources/check.svg" alt="icone de validation" class="icone-verif">
+                    </div>
+            
+                    <button type="submit">Création du compte</button>
+                </form>
+            </div>
+        </div> 
     </div>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
