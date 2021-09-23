@@ -12,10 +12,10 @@ body{
 }
 .container{
     display:flex;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     height: 500px;
+    margin: 0 20px;
 }
 .container-photo, .container-login{
     width: 50%;
@@ -40,7 +40,7 @@ body{
     color: #cfd9df;
 }
 .box-photo img{
-    width: 400px;
+    width: 100%;
     margin: 20px auto;
 }
 .box-login{
@@ -50,6 +50,7 @@ body{
 }
 .box-login h1 {
     color: #330867;
+    margin-bottom: 15px;
 }
 .icone-verif {
     width: 22px;
@@ -88,6 +89,10 @@ button{
     margin: 20px auto;
     padding: 10px 15px;
     font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background: #330867;
 }
 .ligne {
     width: 80%;
@@ -104,10 +109,11 @@ button{
     display: none;
 }
 .l1 {
-    background: rgb(182,182,13);
+    background: rgb(151,85,85);
+    
 }
 .l2 {
-    background: rgb(151,85,85);
+    background: rgb(182,182,13);
 }
 .l3 {
     background: green;

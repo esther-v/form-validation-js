@@ -2,7 +2,7 @@
 const inpUser = document.querySelector('#utilisateur');
 const inpEmail = document.querySelector('#email');
 const inpPassword = document.querySelector('#password');
-const inpConfirm = document.querySelector('.form-groupe:nth-child(4) input');
+const inpConfirm = document.querySelector('#passwordconf');
 const allImg = document.querySelectorAll('.icone-verif');
 const allSpan = document.querySelectorAll('span');
 const allLigne = document.querySelectorAll('.ligne div');
@@ -121,3 +121,19 @@ inpPassword.addEventListener('input', (e) => {
 
 })
 
+//password confirmation
+inpConfirm.addEventListener('input', (e) => {
+
+    if(e.target.value.length === 0){
+        allImg[3].style.display = "inline";
+        allImg[3].src = "ressources/error.svg";
+    }
+    else if(e.target.value === inpValue){
+        allImg[3].style.display = "inline";
+        allImg[3].src = "ressources/check.svg";
+    } else {
+        allImg[3].style.display = "inline";
+        allImg[3].src = "ressources/error.svg";
+    }
+
+})
